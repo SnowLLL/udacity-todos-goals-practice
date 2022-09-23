@@ -29,7 +29,7 @@ const Todos = (props) => {
             <h1>Todo List</h1>
             <input type="text" placeholder="Enter your todo" ref={inputRef} />
             <button onClick={addItem}> ADD TODO</button>
-            <List toggle={toggleItem} remove={removeItem} />
+            <List items={props.todos} toggle={toggleItem} remove={removeItem} />
         </div>
     )
 }

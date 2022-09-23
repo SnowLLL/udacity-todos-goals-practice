@@ -25,7 +25,7 @@ const Goals = (props) => {
             <h1>Goals List</h1>
             <input type="text" placeholder="Enter your goal" ref={inputRef} />
             <button onClick={addItem}> ADD GOAL</button>
-            <List remove={removeItem} />
+            <List items={props.goals} remove={removeItem} />
         </div>
     )
 }
